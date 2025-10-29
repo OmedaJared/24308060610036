@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora TMB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+       
+        :root{
+            --fondo-negro: #000000;
+            --azul-marino: #0759ac;
+            --gris-boton: #181819;
+        }
+
+        body {
+            background-color: var(--fondo-negro) !important;
+            color: var(--azul-marino) !important;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: var(--fondo-negro) !important;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .navbar .navbar-brand {
+            color: var(--azul-marino) !important;
+        }
+
+    
+        .card {
+            background-color: rgba(255,255,255,0.03) !important;
+            color: var(--azul-marino) !important;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+
+       
+        .form-control, .form-select {
+            background-color: rgba(255,255,255,0.02);
+            color: var(--azul-marino);
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        .form-check-label, label {
+            color: var(--azul-marino);
+        }
+
+       
+        a, a:link, a:visited {
+            color: var(--azul-marino);
+        }
+
+       
+        .btn, .btn-primary, .btn-secondary {
+            background-color: var(--gris-boton) !important;
+            border-color: var(--gris-boton) !important;
+            color: var(--azul-marino) !important;
+            box-shadow: none !important;
+        }
+        .btn:hover, .btn:focus {
+            filter: brightness(0.95);
+            color: var(--azul-marino) !important;
+        }
+
+        h2, h1, h3, p {
+            color: var(--azul-marino) !important;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-dark mb-4">
+        <div class="container">
+            <span class="navbar-brand">Calculadora de Gasto Energético</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        {% block contenido %}{% endblock %}
+    </div>
+
+</body>
+</html>

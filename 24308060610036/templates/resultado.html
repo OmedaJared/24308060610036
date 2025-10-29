@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block contenido %}
+<div class="card shadow p-4 text-center">
+    <h2 class="mb-4">Resultados</h2>
+    <p><strong>Tasa Metabólica Basal (TMB):</strong> {{ tmb | round(2) }} kcal/día</p>
+    <p><strong>Gasto Energético Total (GET):</strong> {{ get | round(2) }} kcal/día</p>
+    <a href="/" class="btn btn-secondary mt-3">Calcular de nuevo</a>
+</div>
+{% endblock %}
